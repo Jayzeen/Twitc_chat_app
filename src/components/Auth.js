@@ -18,7 +18,7 @@ const Auth = () => {
       return
     }
 
-     const response = await axios.post(`http://localhost:8000/${endpoint}`, {
+     const response = await axios.post(`https://twitch-chat-app1.herokuapp.com/${endpoint}`, {
       username,
       password
      })
