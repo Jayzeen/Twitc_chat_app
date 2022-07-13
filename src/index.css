@@ -11,3 +11,228 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.messaging-container {
+  width: 100%;
+  height: 95%;
+  padding: 10px;
+}
+
+.icon {
+  position: fixed;
+  z-index: +10;
+  top: 45px;
+  right: 40px;
+}
+
+
+.auth_container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#000c18, #090c0e);
+  display: flex;
+  justify-content: center;
+}
+
+.auth_container_box {
+  position: relative;
+  background: rgba(225, 225, 225, 0.03);
+  align-self: center;
+  border-radius: 10px;
+  box-shadow: 6px 7px 8px #19232d;
+  border: none;
+  width: 25%;
+  height: 55%;
+  padding: 10px;
+  backdrop-filter: blur(22px);
+}
+
+.blob {
+  height: 25px;
+  width: 25px;
+  background: #000429;
+  border-radius: 100%;
+  position: absolute;
+  left: -25px;
+  bottom: -10px;
+}
+.blob2 {
+  height: 25px;
+  width: 25px;
+  background: #000429;
+  border-radius: 100%;
+  position: absolute;
+  right: -25px;
+  top: -20px;
+}
+
+.auth_container_form {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.auth_container_form input{
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 10px;
+  margin: 0 0 8px 0;
+  background-color: #000c188a;
+  border: 2px solid #151a1f;
+  box-shadow: 0px 10px 21px rgba(0, 0, 0, 0.3);
+
+}
+
+.authform_button {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+.auth_container_form button {
+	color: #ffffff;
+  border: 2px solid #151a1f;
+  padding: 12px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+	font-family: 'Comfortaa', cursive;
+	font-size: 1rem;
+	border-radius: 4px;
+	box-shadow: 0px 10px 21px rgba(0, 0, 0, 0.3);
+	background: #000c185b;
+
+  background: linear-gradient(45deg,
+   #000c18 5%, rgba(255,255,255,.5) 6%,
+   #000c18 9%, rgba(255,255,255,.5) 10%,
+   #000c18 17%,
+   rgba(255,255,255,.5) 19%,
+   #000c18 21%);
+
+	background-size: 150%;
+	background-position: right;
+	transition: 1s;
+}
+
+.auth_container_form button:hover {
+	background-position: left;
+	color: white;
+	box-shadow: inset 0px 3px 5px rgba(255,255,255,1), 0px 0px 10px rgba(0,0,0,0.25);
+}
+
+.auth_container_form button:focus {
+	outline: none;
+}
+
+
+.auth_options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 5px;
+}
+
+.auth_options button {
+  width: 45%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.8rem;
+  border: 2px solid #151a1f;
+  background-color: #151a1f;
+  padding: 10px;
+  box-shadow: 0px 10px 21px rgba(0, 0, 0, 0.3);
+  
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.auth_options button:hover {
+  background-color: #001030;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .auth_container_box {
+    width: 50%;
+    height: 50%;
+  }
+
+  .auth_container_form input{
+    font-size: 0.7rem;
+  }
+
+  .auth_container_form button {
+    font-size: 1rem;
+  }
+
+  .auth_options button {
+    font-size: 0.7rem;
+  }
+
+  .logout_button {
+    font-size: 0.7rem;
+  }
+}
+
+
+.logout_button{
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.8rem;
+  border: 2px solid #151a1f;
+  background-color: #151a1f;
+  padding: 10px;
+  box-shadow: 0px 10px 21px rgba(0, 0, 0, 0.5);
+  
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.logout_button:hover {
+  background-color: #001030;
+}
+
+
+/* User list styling */
+.userList_container {
+  width: 100%;
+  padding: 20px;
+  height: 70vh;
+  background-color: #151a1f;
+  overflow-y: scroll;
+}
+
+.userList_container li {
+  list-style: none;
+  padding: 3px;
+  margin: 0;
+  display: flex;
+}
+
+.userList_container li p {
+  padding: 0 0 5px 5px;
+  margin: 0;
+}
+
+.chat_container {
+  width: 100%;
+  height: 95vh;
+  background-color: #070a0d;
+  position: relative;
+  bottom: 0;
+  border-radius: 10px;
+  box-shadow: 0px 10px 21px rgba(0, 0, 0, 0.5);
+}
